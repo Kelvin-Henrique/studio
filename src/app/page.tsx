@@ -1,16 +1,25 @@
 import { AppVersionDashboard } from "@/components/app-version-dashboard";
 import { ThreeOitLogo } from "@/components/three-oit-logo";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen w-full flex-col bg-background">
-      <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-6">
+      <header className="sticky top-0 z-30 flex h-16 items-center justify-between gap-4 border-b bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-6">
         <div className="flex items-center gap-2">
-          <ThreeOitLogo className="h-8 w-8 text-primary" />
+          <ThreeOitLogo className="h-8 w-8" />
           <h1 className="text-xl font-bold font-headline tracking-tight">
             Three OIT
           </h1>
         </div>
+        <Button asChild>
+          <Link href="/download">
+            <Download className="mr-2 h-4 w-4" />
+            Baixar Arquivos do Projeto
+          </Link>
+        </Button>
       </header>
       <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
         <AppVersionDashboard />
