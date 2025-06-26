@@ -25,7 +25,7 @@ export const MOCK_APPS_DATA: AppData[] = [
     id: "app-1",
     name: "QuantumLeap CRM",
     logo: AppWindow,
-    logoBgColor: "bg-blue-500",
+    logoBgColor: "bg-primary",
     versions: {
       android: {
         production: [
@@ -75,7 +75,7 @@ export const MOCK_APPS_DATA: AppData[] = [
     id: "app-2",
     name: "Stellar Photos",
     logo: Aperture,
-    logoBgColor: "bg-purple-500",
+    logoBgColor: "bg-secondary",
     versions: {
       android: {
         production: [
