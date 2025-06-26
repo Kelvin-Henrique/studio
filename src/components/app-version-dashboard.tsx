@@ -22,7 +22,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MOCK_APPS_DATA, AppData } from "@/lib/data";
-import { ChangelogSummarizer } from "./changelog-summarizer";
 import {
   Apple,
   Download,
@@ -99,7 +98,6 @@ export function AppVersionDashboard() {
                                   <p className="text-sm text-muted-foreground whitespace-pre-line">
                                     {version.changelog}
                                   </p>
-                                  <ChangelogSummarizer changelog={version.changelog} />
                                 </CardContent>
                                 <CardFooter>
                                   <Button asChild className="w-full">
