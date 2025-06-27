@@ -1,8 +1,5 @@
 import { AppVersionDashboard } from "@/components/app-version-dashboard";
 import { ThreeOitLogo } from "@/components/three-oit-logo";
-import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,12 +11,6 @@ export default function Home() {
             Three OIT
           </h1>
         </div>
-        <Button asChild>
-          <Link href="/download">
-            <Download className="mr-2 h-4 w-4" />
-            Baixar Arquivos do Projeto
-          </Link>
-        </Button>
       </header>
       <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
         <AppVersionDashboard />
