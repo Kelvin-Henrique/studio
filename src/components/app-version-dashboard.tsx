@@ -24,7 +24,7 @@ import { Button } from "@/components/ui/button";
 import { MOCK_APPS_DATA, AppData } from "@/lib/data";
 import {
   Apple,
-  Download,
+  Link as LinkIcon,
   FlaskConical,
   Rocket,
   Smartphone,
@@ -99,14 +99,16 @@ export function AppVersionDashboard() {
                                     {version.changelog}
                                   </p>
                                 </CardContent>
-                                <CardFooter>
-                                  <Button asChild className="w-full">
-                                    <Link href={version.downloadUrl} target="_blank">
-                                      <Download className="mr-2 h-4 w-4" />
-                                      Download
-                                    </Link>
-                                  </Button>
-                                </CardFooter>
+                                {platform === 'android' && (
+                                  <CardFooter>
+                                    <Button asChild className="w-full">
+                                      <Link href={version.downloadUrl} target="_blank">
+                                        <LinkIcon className="mr-2 h-4 w-4" />
+                                        Link
+                                      </Link>
+                                    </Button>
+                                  </CardFooter>
+                                )}
                               </Card>
                             ))
                           ) : (
