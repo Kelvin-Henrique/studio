@@ -1,4 +1,4 @@
-import { Aperture, AppWindow, type LucideIcon } from "lucide-react";
+import { Users, BookOpen, Shield, Handshake, Briefcase, CreditCard, type LucideIcon } from "lucide-react";
 
 export type Version = {
   id: string;
@@ -22,48 +22,30 @@ export type AppData = {
 
 export const MOCK_APPS_DATA: AppData[] = [
   {
-    id: "app-1",
-    name: "QuantumLeap CRM",
-    logo: AppWindow,
-    logoBgColor: "bg-primary",
+    id: "sindmet-sp",
+    name: "Sindmet SP",
+    logo: Users,
+    logoBgColor: "bg-blue-600",
     versions: {
       android: {
         production: [
           {
-            id: "v-android-prod-1",
-            number: "v1.3.0",
-            date: "01 de Julho de 2024",
-            changelog:
-              "• Novo painel de análise de clientes.\n• Melhorias de desempenho na sincronização de contatos.\n• Correção de bugs de interface.",
-            downloadUrl: "#",
-          },
-          {
-            id: "v-android-prod-2",
-            number: "v1.2.5",
-            date: "15 de Junho de 2024",
-            changelog:
-              "• Correções de segurança críticas.\n• Interface do usuário atualizada para telas maiores.",
+            id: "sindmet-android-prod-1",
+            number: "v1.0.0",
+            date: "01 de Agosto de 2024",
+            changelog: "• Lançamento inicial do aplicativo.",
             downloadUrl: "#",
           },
         ],
-        internal: [
-          {
-            id: "v-android-int-1",
-            number: "v1.3.1-beta",
-            date: "05 de Julho de 2024",
-            changelog: "• Teste da nova integração com o calendário.",
-            downloadUrl: "#",
-          },
-        ],
+        internal: [],
       },
       ios: {
         production: [
-          {
-            id: "v-ios-prod-1",
-            number: "v1.2.0",
-            date: "20 de Junho de 2024",
-            changelog:
-              "• Suporte para widgets na tela inicial.\n• Melhorias de acessibilidade com VoiceOver.",
+            {
+            id: "sindmet-ios-prod-1",
+            number: "v1.0.0",
+            date: "01 de Agosto de 2024",
+            changelog: "• Lançamento inicial do aplicativo.",
             downloadUrl: "#",
           },
         ],
@@ -72,29 +54,75 @@ export const MOCK_APPS_DATA: AppData[] = [
     },
   },
   {
-    id: "app-2",
-    name: "Stellar Photos",
-    logo: Aperture,
-    logoBgColor: "bg-secondary",
+    id: "cefol",
+    name: "Cefol",
+    logo: BookOpen,
+    logoBgColor: "bg-green-600",
     versions: {
       android: {
         production: [
           {
-            id: "v2-android-prod-1",
-            number: "v2.5.0",
-            date: "28 de Junho de 2024",
-            changelog:
-              "• Novos filtros artísticos com IA.\n• Edição de vídeo em 4K.\n• Compartilhamento direto para redes sociais.",
+            id: "cefol-android-prod-1",
+            number: "v2.1.0",
+            date: "15 de Julho de 2024",
+            changelog: "• Novos cursos disponíveis.\n• Melhorias na interface.",
+            downloadUrl: "#",
+          },
+        ],
+        internal: [],
+      },
+      ios: {
+        production: [],
+        internal: [],
+      },
+    },
+  },
+  {
+    id: "cooperemb",
+    name: "Cooperemb",
+    logo: Shield,
+    logoBgColor: "bg-red-600",
+    versions: {
+      android: {
+        production: [
+          {
+            id: "cooperemb-android-prod-1",
+            number: "v1.5.2",
+            date: "10 de Julho de 2024",
+            changelog: "• Correções de segurança.",
+            downloadUrl: "#",
+          },
+        ],
+        internal: [],
+      },
+      ios: {
+        production: [],
+        internal: [],
+      },
+    },
+  },
+  {
+    id: "cooperjohnson",
+    name: "Cooperjohnson",
+    logo: Handshake,
+    logoBgColor: "bg-purple-600",
+    versions: {
+      android: {
+        production: [
+           {
+            id: "cooperj-android-prod-1",
+            number: "v3.0.0",
+            date: "05 de Junho de 2024",
+            changelog: "• Nova interface e funcionalidades.",
             downloadUrl: "#",
           },
         ],
         internal: [
-          {
-            id: "v2-android-int-1",
-            number: "v2.5.1-rc1",
-            date: "03 de Julho de 2024",
-            changelog:
-              "• Testando novo codec de exportação AV1.\n• Correções para o modo retrato.",
+            {
+            id: "cooperj-android-int-1",
+            number: "v3.1.0-beta",
+            date: "20 de Julho de 2024",
+            changelog: "• Testes internos.",
             downloadUrl: "#",
           },
         ],
@@ -102,31 +130,70 @@ export const MOCK_APPS_DATA: AppData[] = [
       ios: {
         production: [
           {
-            id: "v2-ios-prod-1",
-            number: "v2.4.0",
-            date: "18 de Junho de 2024",
-            changelog:
-              "• Integração com a API ProRAW.\n• Melhorias na organização de álbuns.",
-            downloadUrl: "#",
-          },
-          {
-            id: "v2-ios-prod-2",
-            number: "v2.3.0",
+            id: "cooperj-ios-prod-1",
+            number: "v2.9.0",
             date: "01 de Junho de 2024",
-            changelog: "• Lançamento inicial para iOS.",
+            changelog: "• Melhorias de performance.",
             downloadUrl: "#",
           },
         ],
-        internal: [
+        internal: [],
+      },
+    },
+  },
+  {
+    id: "sindeepres",
+    name: "Sindeepres",
+    logo: Briefcase,
+    logoBgColor: "bg-yellow-600",
+    versions: {
+      android: {
+        production: [],
+        internal: [],
+      },
+      ios: {
+        production: [
           {
-            id: "v2-ios-int-1",
-            number: "v2.4.1-tf",
-            date: "25 de Junho de 2024",
-            changelog:
-              "• Teste de estabilidade para o novo recurso de colaboração em álbuns.",
+            id: "sindeepres-ios-prod-1",
+            number: "v1.2.0",
+            date: "01 de Maio de 2024",
+            changelog: "• Melhorias no agendamento.",
             downloadUrl: "#",
           },
         ],
+        internal: [],
+      },
+    },
+  },
+  {
+    id: "metalcred",
+    name: "MetalCred",
+    logo: CreditCard,
+    logoBgColor: "bg-gray-700",
+    versions: {
+      android: {
+        production: [
+          {
+            id: "metalcred-android-prod-1",
+            number: "v4.0.1",
+            date: "25 de Julho de 2024",
+            changelog: "• Novo extrato detalhado.\n• Correção de bugs.",
+            downloadUrl: "#",
+          },
+        ],
+        internal: [],
+      },
+      ios: {
+        production: [
+          {
+            id: "metalcred-ios-prod-1",
+            number: "v4.0.0",
+            date: "20 de Julho de 2024",
+            changelog: "• Lançamento da nova versão 4.",
+            downloadUrl: "#",
+          },
+        ],
+        internal: [],
       },
     },
   },
