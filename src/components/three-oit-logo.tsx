@@ -12,23 +12,15 @@ export function ThreeOitLogo(props: SVGProps<SVGSVGElement>) {
     >
       <g stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none">
         <circle cx="20" cy="20" r="18" strokeDasharray="4 2" />
-        {/* Top structure */}
-        <path d="M14 15h12" />
-        <path d="M20 15v5" />
-
-        {/* Left structure */}
-        <path d="M14 20v5" />
-        <path d="M14 25h5" />
-        
-        {/* Right structure */}
-        <path d="M26 20v5" />
-        <path d="M21 25h5" />
-
-        {/* Bottom small line */}
-        <path d="M17 28h6" />
-        
-        {/* Middle connector */}
-        <path d="M17 20h6" />
+        {/* Circuit-like design based on the provided logo image */}
+        <path d="M14 15h5" />
+        <path d="M19 15v5" />
+        <path d="M19 20h5" />
+        <path d="M24 20v5" />
+        <path d="M16 25h8" />
+        <path d="M16 25v-5" />
+        <path d="M16 20h-3" />
+        <path d="M13 20v-5" />
       </g>
     </svg>
   );
