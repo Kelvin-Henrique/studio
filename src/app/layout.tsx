@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Three OIT - Painel de Versões',
-  description: 'Painel de Versões de Aplicativos da Three OIT',
+  title: 'Threeo Aplicativos - Painel de Versões',
+  description: 'Painel de Versões de Aplicativos da Threeo Aplicativos',
 };
 
 export default function RootLayout({

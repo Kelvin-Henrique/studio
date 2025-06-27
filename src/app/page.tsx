@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex items-center gap-2">
           <ThreeOitLogo className="h-8 w-8" />
           <h1 className="text-xl font-bold font-headline tracking-tight">
-            Three OIT
+            Threeo Aplicativos
           </h1>
         </div>
       </header>
